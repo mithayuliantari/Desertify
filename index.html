@@ -6,6 +6,7 @@
     <title>Desertify</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,17 +14,18 @@
       <!-- Navbar -->
       <nav class="navbar">
         <div class="navbar-logo"></div>
-        <img src="assets/logo desertify.png" alt="Logo"> 
+          <img src="assets/logo desertify.png" alt="Logo"> 
+          <p class="p-nav">Desertify</p>
             <div class="navbar-links">
-              <span class="navbar-link">Home</span>
-              <span class="navbar-link">Product</span>
-              <span class="navbar-link">Services</span>
-              <span class="navbar-link">Contact Us</span>
+              <a href="#home" class="navbar-link">Home</a>
+              <a href="#products" class="navbar-link">Product</a>
+              <a href="#services" class="navbar-link">Services</a>
+              <a href="#about" class="navbar-link">About Us</a>
             </div>
       </nav>
 
       <!-- Hero Section -->
-      <section class="hero">
+      <section id="home" class="hero">
           <div class="hero-content">
                 <h1>Sweet Treats,<br />Perfect Eats</h1>
                 <p>Desertify offers the perfect blend of sweetness and flavor, delivering irresistible treats and delicious eats that satisfy every craving.</p>
@@ -34,39 +36,49 @@
           </div>
       </section>
 
-      <!-- Top Products -->
-      <section class="top-products">
+      <section id="products" class="top-products">
         <h2>Top Products</h2>
-        <div class="products-grid">
-          <div class="product-item">
-            <img src="assets/baked bun.png" alt="Baked Bun" />
-            <p class="product-price">68K</p>
-            <h3 class="product-name">Baked Bun</h3>
-            <div class="add-btn">Add</div>
+        <div class="scroll-container">
+          <button class="arrow left-arrow">&#8249;</button>
+          <div class="products-grid">
+            <div class="product-item">
+              <img src="assets/baked bun.png" alt="Baked Bun" />
+              <p class="product-price">68K</p>
+              <h3 class="product-name">Baked Bun</h3>
+              <div class="add-btn">Add</div>
+            </div>
+            <div class="product-item">
+              <img src="assets/sourdraugh.png" alt="Sourdraugh" />
+              <p class="product-price">100K</p>
+              <h3 class="product-name">Sourdraugh</h3>
+              <div class="add-btn">Add</div>
+            </div>
+            <div class="product-item">
+              <img src="assets/grain bread.png" alt="Grain Bread" />
+              <p class="product-price">90K</p>
+              <h3 class="product-name">Grain Bread</h3>
+              <div class="add-btn">Add</div>
+            </div>
+            <div class="product-item">
+              <img src="assets/bagel ring.png" alt="Bagel Ring" />
+              <p class="product-price">40K</p>
+              <h3 class="product-name">Bagel Ring</h3>
+              <div class="add-btn">Add</div>
+            </div>
+            <div class="product-item">
+              <img src="assets/brioche.png" alt="Brioche" />
+              <p class="product-price">45K</p>
+              <h3 class="product-name">Brioche</h3>
+              <div class="add-btn">Add</div>
+            </div>
           </div>
-          <div class="product-item">
-            <img src="assets/sourdraugh.png" alt="Sourdraugh" />
-            <p class="product-price">100K</p>
-            <h3 class="product-name">Sourdraugh</h3>
-            <div class="add-btn">Add</div>
-          </div>
-          <div class="product-item">
-            <img src="assets/grain bread.png" alt="Grain Bread" />
-            <p class="product-price">90K</p>
-            <h3 class="product-name">Grain Bread</h3>
-            <div class="add-btn">Add</div>
-          </div>
-          <div class="product-item">
-            <img src="assets/bagel ring.png" alt="Bagel Ring" />
-            <p class="product-price">40K</p>
-            <h3 class="product-name">Bagel Ring</h3>
-            <div class="add-btn">Add</div>
-          </div>
-          
+          <button class="arrow right-arrow">&#8250;</button>
+        </div>
       </section>
+      
 
       <!-- 30% Off -->
-      <section class="discount">
+      <section id="services" class="discount">
         <h2>30% Off Your First Order</h2>
         <p>Treat yourself to our delicious desserts! Enjoy 30% off your first order and make your moments sweeter.</p>
         <div class="discount-btn">Learn More</div>
@@ -74,7 +86,7 @@
 
 
       <!-- Explore More -->
-      <section class="explore">
+      <section id="explore" class="explore">
         <h2>Explore More</h2>
         <div class="categories">
           <div>
@@ -109,14 +121,14 @@
 
 
       <!-- About Us -->
-      <section class="about-us">
+      <section id="about" class="about-us">
         <h2>About Us</h2>
         <p>Welcome to Desertify! We’re dedicated to creating irresistible, freshly made desserts that add a touch of sweetness to your day. From timeless classics to innovative treats, every bite is crafted with passion and care. Discover the magic of dessert, only at Desertify!</p>
         <div class="about-us-btn">Explore Desertify</div>
       </section>
 
       <!-- Featured Treats -->
-      <section class="featured-treats">
+      <section id="featured" class="featured-treats">
         <h2>Featured Treats</h2>
         <div class="featured-treats-grid">
           <div class="featured-item">
@@ -143,11 +155,10 @@
           <div class="featured-item">
             <img src="assets/Burnt Cheesecake.jpeg" alt="Brownies" />
             <div class="item-treats">
-              <p>Cheesecake</p>
+              <p>Cheese</p>
               <p class="p-price">125K</p>
             </div>
           </div>
-          
         </div>
       </section>
 
